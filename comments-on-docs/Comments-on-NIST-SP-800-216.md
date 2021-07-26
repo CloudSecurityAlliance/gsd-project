@@ -111,6 +111,16 @@ The CVE database is missing a huge amount of content:
 4) Non CNA sources with "out of scope" but useful data (e.g. services, malware, backdoors, etc.)
 
 ```
+689 The CVE naming scheme should be used when referencing publicly disclosed vulnerabilities.
+690 The CVE website is focused on providing unique identification for each vulnerability to maintain
+691 the CVE list. It is not intended to act as an advisory service. When referencing a CVE
+692 vulnerability, the NVD link should be used since it provides an analysis of each CVE and any
+693 referenced information.
+```
+
+This will require the CVE system to be much more responsive and cover a much wider scope of vulnerabilities. It's also not clear on what will happen if a CNA refuses to create CVE identifiers, I can only assume the CVE dispute process will be invoked. The reality is the US Government uses a LOT of OpenSource software for which there is poor, if any, CVE coverage currently. 
+
+```
 794 3.2.2. Monitoring of Vulnerability Reports
 795 VDPOs should monitor their reporting mechanisms for new reports and communications related
 796 to existing reports. VDPOs should also monitor public sources for vulnerability reports and
@@ -118,4 +128,4 @@ The CVE database is missing a huge amount of content:
 798 customer service and support.
 ```
 
-The CVE database doesn't support this well, witness the 20,000+ missing SUSE URLs: https://github.com/distributedweaknessfiling/securitylist/commit/b690b4b1de7afba26c849e12b4aaadafc95e7e81 and 20,000+ missing Red Hat URLs: https://github.com/distributedweaknessfiling/securitylist/commit/e0a8925c90b1b4e6203fecbc6f61dcefe1b4accc
+The CVE database doesn't support this well, witness the 20,000+ missing SUSE URLs: https://github.com/distributedweaknessfiling/securitylist/commit/b690b4b1de7afba26c849e12b4aaadafc95e7e81 and 20,000+ missing Red Hat URLs: https://github.com/distributedweaknessfiling/securitylist/commit/e0a8925c90b1b4e6203fecbc6f61dcefe1b4accc and the hundreds (thousands?) of publicly used CVEs that are not in the database https://github.com/distributedweaknessfiling/securitylist/blob/main/missing-data/cvelist-missing-items-RESERVED-found-in-allitems.csv  or the CVEs in wide use for days or weeks (by the press even) prior to being entered into the CVE database.
