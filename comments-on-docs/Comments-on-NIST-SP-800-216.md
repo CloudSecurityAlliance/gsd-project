@@ -4,6 +4,10 @@ https://csrc.nist.gov/publications/detail/sp/800-216/draft
 
 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-216-draft.pdf
 
+Public comment period: June 7, 2021 through August 9, 2021
+
+Email: sp800-216-comments@nist.gov
+
 Please put the section name and line numbers when quoting text.
 
 # General comments
@@ -14,7 +18,7 @@ The draft appears to focus exclusively on traditional software products run by e
 
 # Specific comments below
 
-## U.S. Government Vulnerability Disclosure
+Section: 234 1. U.S. Government Vulnerability Disclosure
 
 ```
 235 Thousands of security vulnerabilities in computer software and systems are discovered and
@@ -38,6 +42,8 @@ curl https://cve.mitre.org/data/downloads/allitems.csv | grep -a "Assigned (2020
 
 The git repo may have different data but walking all the files to extract the time they actually went public with data needs to be done at some point.
 
+Section: 334 1.1. Usage of Document Terminology
+
 ```
 335 In the context of this document, the term “vulnerability” refers to a security vulnerability in a
 336 digital product. It does not refer to other kinds of vulnerabilities that may pertain to, for example,
@@ -45,6 +51,8 @@ The git repo may have different data but walking all the files to extract the ti
 ```
 
 Assuming digital products includes cloud services then physical security is a valid concern. Please note that the word "cloud" only occurs once in the document in a reference to ISO IEC 27017. This creates a significant blindspot as 1) many government agencuies use cloud services and 2) many software and "digital products" make use of cloud services (licensing management, updates, data storage and processing, etc.). 
+
+Section: 396 2.1.1. Create Vulnerability Report Receipt Capability
 
 ```
 397 Each FCB participant should develop the ability to receive vulnerability reports from reporters,
@@ -55,7 +63,7 @@ Assuming digital products includes cloud services then physical security is a va
 402 should be stated in a public policy
 ```
 
-Where will these policies be published, and how will people find them? There are no generally accepted standards here, e.g. do they use domain.tld/security/ or domain.tld/security.txt (https://securitytxt.org/) or simply rely on al ink in the front page or the "contact us" page? Discovery of how to report an issue is problematic and can result in people giving up and not reporting issues, or extra time being required during an emergency to find out whom to contact and how to contact them.
+Where will these policies be published, and how will people find them? There are no generally accepted standards here, e.g. do they use domain.tld/security/ or domain.tld/.well-known/security.txt (https://securitytxt.org/) or simply rely on al ink in the front page or the "contact us" page? Discovery of how to report an issue is problematic and can result in people giving up and not reporting issues, or extra time being required during an emergency to find out whom to contact and how to contact them.
 
 ```
 408 Vulnerability reports should include a description of the product or service affected; how the
@@ -70,6 +78,8 @@ Where will these policies be published, and how will people find them? There are
 
 No mention is made of reporting formats or standards, e.g. CVE JSON format? CSAF? OSV? UVI?
 
+Section: 429 2.1.2. Determine Scope and Obtain Contacts
+
 ```
 430 Prior to the receipt of any vulnerabilities, each FCB participant will determine which government
 431 VDPOs fall within the scope of their services. The FCB entity will then obtain and maintain a list
@@ -77,6 +87,8 @@ No mention is made of reporting formats or standards, e.g. CVE JSON format? CSAF
 ```
 
 This appears to assume a traditional top down pyramid structure, is there any thought giving to lateral reporting or more of a matrix style layout to allow multiple pathways? Top-down reporting strucutres tend to suffer from the fact they are entirely comprised of a chain of single paths of failure.
+
+Section: 516 2.7.1. Determination of Public Disclosure
 
 ```
 521 Public disclosure may be considered if:
@@ -96,6 +108,8 @@ It is not clear if this advice implies that a CVE identifier should be obtained 
 
 This may create an incentive to cover security vulnerabilities up with a "we fixed it and we're pretty sure nobody exploited it" creating a false sense of security for end users. I would suggest it is better to report incidents, even onces that have been fully handled and pose no significant risk, and 1) label them as such "no action required" and 2) it allows for the creation of actual data and statistics, e.g. a system has 100 security vulnerabilities that were closed out before they became a problem, is this an indication of a security team that is really on the ball, or a team that is covering up real vulnerabilities as "not a problem" and so on? Without any data and reporting there is a strong possibility for institutional rot to set in.
 
+Section: 627 2.7.3.2. National Vulnerability Database
+
 ```
 628 The National Vulnerability Database [NVD] is the U.S. Government repository of standards-
 629 based vulnerability management data. It contains a database of almost all publicly disclosed
@@ -110,6 +124,8 @@ The CVE database is missing a huge amount of content:
 3) Non CNA data sources with in scope content
 4) Non CNA sources with "out of scope" but useful data (e.g. services, malware, backdoors, etc.)
 
+Section: 683 2.9. Technical Approaches and Resources
+
 ```
 689 The CVE naming scheme should be used when referencing publicly disclosed vulnerabilities.
 690 The CVE website is focused on providing unique identification for each vulnerability to maintain
@@ -120,8 +136,10 @@ The CVE database is missing a huge amount of content:
 
 This will require the CVE system to be much more responsive and cover a much wider scope of vulnerabilities. It's also not clear on what will happen if a CNA refuses to create CVE identifiers, I can only assume the CVE dispute process will be invoked. The reality is the US Government uses a LOT of OpenSource software for which there is poor, if any, CVE coverage currently. 
 
+
+Section: 794 3.2.2. Monitoring of Vulnerability Reports
+
 ```
-794 3.2.2. Monitoring of Vulnerability Reports
 795 VDPOs should monitor their reporting mechanisms for new reports and communications related
 796 to existing reports. VDPOs should also monitor public sources for vulnerability reports and
 797 organizational communications channels that are likely to receive vulnerability reports, such as
