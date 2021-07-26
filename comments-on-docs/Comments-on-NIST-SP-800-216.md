@@ -147,3 +147,74 @@ Section: 794 3.2.2. Monitoring of Vulnerability Reports
 ```
 
 The CVE database doesn't support this well, witness the 20,000+ missing SUSE URLs: https://github.com/distributedweaknessfiling/securitylist/commit/b690b4b1de7afba26c849e12b4aaadafc95e7e81 and 20,000+ missing Red Hat URLs: https://github.com/distributedweaknessfiling/securitylist/commit/e0a8925c90b1b4e6203fecbc6f61dcefe1b4accc and the hundreds (thousands?) of publicly used CVEs that are not in the database https://github.com/distributedweaknessfiling/securitylist/blob/main/missing-data/cvelist-missing-items-RESERVED-found-in-allitems.csv  or the CVEs in wide use for days or weeks (by the press even) prior to being entered into the CVE database.
+
+Section: 799 3.2.3. Development of the Capability to Receive Vulnerability Disclosure Reports
+
+```
+800 Each VDPO should develop the capability to receive vulnerability reports from their associated
+801 FCB participant. This includes the ability to communicate and enable coordination in
+802 vulnerability reporting resolution, which requires the development of both technical and
+803 personnel/procedural capabilities. If the FCB participant provides technical mechanisms to
+804 streamline this process, the VDPO should use the provided mechanisms.
+```
+
+Where will these policies be published, and how will people find them? There are no generally accepted standards here, e.g. do they use domain.tld/security/ or domain.tld/.well-known/security.txt (https://securitytxt.org/) or simply rely on al ink in the front page or the "contact us" page? Discovery of how to report an issue is problematic and can result in people giving up and not reporting issues, or extra time being required during an emergency to find out whom to contact and how to contact them.
+
+Section: 819 3.2.4. Development of Vulnerability Disclosure Handling Policies
+
+```
+820 Each VDPO should develop and maintain an internal vulnerability handling policy to define and
+821 clarify its intentions for investigating and remediating vulnerabilities as part of a vulnerability
+822 handling process. 
+```
+
+Is there any prescriptive help here, e.g. beyond ISO standards, any best practices for governments/agencies? It seems like a lot of reinventing the wheel will take place here, not all of it compatible or good. 
+
+Section: 838 3.2.5.1. Receipt of Vulnerability Disclosure Reports
+
+```
+841 to identify the potentially vulnerable systems and software. Every vulnerability report should
+842 have a priority rating, assigned by the FCB participant, that is used to optimize resource
+843 allocations and determine the urgency of handling each report. If a VDPO permits the direct
+```
+
+No mention is made of any system to prioritize reports, e.g. is it severity times number of deployed systems times impact? There is no generally accepted guidance here, nor even a good list of the metrics or dimensions, e.g. vulnerability impact, PII exposure, operational requirements, etc. While prioritization is critical to direct resourcing appropriately the complete lack of any framework or guidelines is problematic. 
+
+Section: 773 3.2.1. Development of Vulnerability Disclosure Report Acceptance Policies
+
+```
+786 The internal policy details the rules and procedures for handling, coordinating, and resolving
+787 received vulnerability reports (further described in Section 3.1); the mechanisms used to track
+788 reports; and expectations for communication with reporters and other stakeholders. It should
+789 specify expected response and remediation timelines when handling vulnerability reports as well 
+```
+
+No mention is made of dealing with externally imposed deadlines, e.g. Google project 0 https://googleprojectzero.blogspot.com/2021/04/policy-and-disclosure-2021-edition.html and the lack of any guidance in the public policy may be problematic. This also dovetails with the publishing of metrics which are useful when reporting, e.g. is the entity responsive or slow?
+
+Section: 846 3.2.5.2. Identification of Potentially Vulnerable Systems and Software
+
+```
+847 The first step to addressing a received vulnerability report is to identify the potentially vulnerable
+848 software as well as the agency IT systems to which the report belongs. To enable this, each
+849 VDPO should maintain a current list or database of contacts for each system within its purview.
+850 In some cases, A VDPO that has received a vulnerability report may need to coordinate with
+851 multiple system owners (or their security officer) to determine which system or software is
+852 potentially vulnerable. This step does not involve verifying the existence of the vulnerability but
+853 merely identifying to which system the report belongs.
+854 Many products are complex systems that include or are dependent on other products or
+855 components. Therefore, the initial analysis may not result in a clear understanding of which
+856 products are affected by the vulnerability. It may take multiple iterations of discovery and
+857 research before a determination can be made that the vulnerability exists within government858 produced software or commercial/open-source software used by the Government.
+```
+
+The lack of any prescriptive guidance or standards here is problematic and should be addressed (as evidenced by the direct mention of this very problem in the 2021-05-12 "Executive Order on Improving the Nation’s Cybersecurity" https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/ which mentions SBOM/etc.
+
+Section: 955 3.3.4. Integration of Contractor Support into the VDPO
+
+```
+956 Policy considerations pertaining to the handling, resolution, and correction of vulnerability
+957 disclosure information should be developed to include in any contracts that support an
+958 information system in order to mitigate or resolve the vulnerability.
+```
+
+Guidance around the use of bug bounties especially will be needed here. 
