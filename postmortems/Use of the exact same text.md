@@ -29,5 +29,5 @@ https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&q
 
 # Conclusion
 
-1. CVE test descriptions are largely meaningless now. They lack information that allows them to differentiate each other, ironically you must use CVE ID's to differentiate CVE ID's
+1. CVE text descriptions are largely meaningless now. They lack information that allows them to differentiate each other, ironically you must use CVE ID's to differentiate CVE ID's
 2. The CNA rule changes from 2 to 3 now mean that for many CVE ID's you must go to the JSON data or the original source material in order to determine what is going on (affected versions, vulnerability, etc.)
