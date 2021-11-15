@@ -5,6 +5,8 @@ Please note this is just 2021 data, I haven't bothered to look at older data.
 Many CVEs are now using the exact same text, here is a sample of those using the same text 10 times or more in 2021. For 2021 there are 371 CVE text descriptions used more than once for 1429 CVE entries (as of 2021-11-15).
 
 ```
+wget https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-2021.json.gz
+gzip -d nvdcve-1.1-2021.json.gz
 grep -A 2 "\"description_data\"" nvdcve-1.1-2021.json  | grep "\"value\""  | sort  | uniq -d | wc -l
 grep -A 2 "\"description_data\"" nvdcve-1.1-2021.json  | grep "\"value\""  | sort  | uniq -cd  | cut -d"\"" -f1 | sed 's/ //g' | awk '{s+=$1} END {print s}'
 ```
