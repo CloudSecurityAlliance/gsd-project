@@ -12,7 +12,7 @@ Example data:
 Search for: "Storage Spaces Controller Elevation of Privilege Vulnerability" (https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=Storage+Spaces+Controller+Elevation+of+Privilege+Vulnerability&search_type=all&isCpeNameSearch=false)
 
 |CVE ID|Text Description|
-=========================
+|------|----------------|
 |CVE-2021-41345|Storage Spaces Controller Elevation of Privilege Vulnerability This CVE ID is unique from CVE-2021-26441, CVE-2021-40478, CVE-2021-40488, CVE-2021-40489.|
 |CVE-2021-40489|Storage Spaces Controller Elevation of Privilege Vulnerability This CVE ID is unique from CVE-2021-26441, CVE-2021-40478, CVE-2021-40488, CVE-2021-41345.|
 |CVE-2021-40488|Storage Spaces Controller Elevation of Privilege Vulnerability This CVE ID is unique from CVE-2021-26441, CVE-2021-40478, CVE-2021-40489, CVE-2021-41345.|
