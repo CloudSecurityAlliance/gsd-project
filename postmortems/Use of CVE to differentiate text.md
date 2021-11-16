@@ -1,4 +1,4 @@
-# Use of CVE to differentiate text
+# Use of CVE ID to differentiate text describing CVE ID
 
 A lot of CVE text descriptions (especially from Microsoft) are now largely devoid of information, so much so that they must list other CVE ID's in order to differentiate the ID's:
 
@@ -26,3 +26,7 @@ Search for: "Storage Spaces Controller Elevation of Privilege Vulnerability" (ht
 |CVE-2021-33751|Storage Spaces Controller Elevation of Privilege Vulnerability This CVE ID is unique from CVE-2021-34460, CVE-2021-34510, CVE-2021-34512, CVE-2021-34513.|
 |CVE-2021-26880|Storage Spaces Controller Elevation of Privilege Vulnerability|
 
+# Conclusions:
+
+1. Ensure Security Identifiers have sufficient original sourcing in order to determine what they are/apply to.
+2. For many Security ID's the description text doesn't matter that much
