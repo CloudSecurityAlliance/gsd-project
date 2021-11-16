@@ -27,7 +27,7 @@ To search for these just cut and paste the entire text into the NIST NVD search 
 
 https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=Multiple+vulnerabilities+in+the+web-based+management+interface+of+Cisco+Small+Business+RV110W%2C+RV130%2C+RV130W%2C+and+RV215W+Routers+could+allow+an+authenticated%2C+remote+attacker+to+execute+arbitrary+code+or+cause+an+affected+device+to+restart+unexpectedly.+The+vulnerabilities+are+due+to+improper+validation+of+user-supplied+input+in+the+web-based+management+interface.+An+attacker+could+exploit+these+vulnerabilities+by+sending+crafted+HTTP+requests+to+an+affected+device.+A+successful+exploit+could+allow+the+atta&queryType=phrase&search_type=all&isCpeNameSearch=false
 
-# Conclusion
+# Recommendations:
 
 1. CVE text descriptions are largely meaningless now. They lack information that allows them to differentiate each other, ironically you must use CVE ID's to differentiate CVE ID's
 2. The CNA rule changes from 2 to 3 now mean that for many CVE ID's you must go to the JSON data or the original source material in order to determine what is going on (affected versions, vulnerability, etc.)
