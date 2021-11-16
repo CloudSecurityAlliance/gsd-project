@@ -26,7 +26,7 @@ Search for: "Storage Spaces Controller Elevation of Privilege Vulnerability" (ht
 |CVE-2021-33751|Storage Spaces Controller Elevation of Privilege Vulnerability This CVE ID is unique from CVE-2021-34460, CVE-2021-34510, CVE-2021-34512, CVE-2021-34513.|
 |CVE-2021-26880|Storage Spaces Controller Elevation of Privilege Vulnerability|
 
-# Conclusions:
+# Recommendations:
 
 1. Ensure Security Identifiers have sufficient original sourcing in order to determine what they are/apply to.
 2. For many Security ID's the description text doesn't matter that much
