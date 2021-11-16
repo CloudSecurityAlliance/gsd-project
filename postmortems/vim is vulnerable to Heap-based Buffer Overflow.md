@@ -16,3 +16,7 @@ It appears someone fuzzed vim and then released the results piecemeal resul;ting
 TODO: confirm same reporter, timelines
 
 TODO: The CVSS scores are all different, this needs investigation.
+
+# Recommendations:
+
+1. Include data about related Security Identifiers and what the relationship is (e.g. parent/child/sibling?)
