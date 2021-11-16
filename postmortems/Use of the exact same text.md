@@ -29,5 +29,5 @@ https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&q
 
 # Recommendations:
 
-1. CVE text descriptions are largely meaningless now. They lack information that allows them to differentiate each other, ironically you must use CVE ID's to differentiate CVE ID's
+1. CVE text descriptions are no longer important, under CNA 3.0 rules they don't even need to have a Vendor/Product/Version. Ironically you must use CVE ID's to differentiate CVE ID's from each other using the description text since there is no relational data included in the CVE data.
 2. The CNA rule changes from 2 to 3 now mean that for many CVE ID's you must go to the JSON data or the original source material in order to determine what is going on (affected versions, vulnerability, etc.)
