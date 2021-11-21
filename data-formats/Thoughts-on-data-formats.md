@@ -8,7 +8,7 @@ The GSD can use other peoples data formats, especially if we clearly label them 
 
 * Identifier
 * Meta data (time assigned, who requested it, etc.)
-* Reference URL (optional: type of URL, copy of data, etc.) OR Source (e.g. a namespace and an identifier, "redhat.com:RHSA-2021-1234" 
+* Reference URL (optional: type of URL, copy of data, etc.) OR Source (e.g. a namespace and an identifier, "redhat.com:RHSA-2021-1234" OR known exploit OR known exploitation
 
 Essentially we need some path if discoverability. 
 
