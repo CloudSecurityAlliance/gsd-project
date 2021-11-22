@@ -1,4 +1,4 @@
-# CVE 2021 no affected version raw list
+# CVE 2021 no affected version in data raw list
 
 Many 2021 CVE's contain no meta data about the affected product/version. A raw list is:
 
