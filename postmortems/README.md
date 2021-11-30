@@ -28,17 +28,17 @@ Apache timeline
 
 The text based descriptions contain no real data other than "this is different than CVE X"
 
-[Use of CVE to differentiate text](Use of CVE to differentiate text.md)
+[Use of CVE to differentiate text](Use%20of%20CVE%20to%20differentiate%20text.md)
 
 ## Use of the exact same text
 
 The exact same description text is used, in one case 61 times. 
 
-[Use of the exact same text](Use of the exact same text.md)
+[Use of the exact same text](Use%20of%20the%20exact%20same%20text.md)
 
 ## vim is vulnerable to Heap-based Buffer Overflow
 
 Trickling out of results in order to get multiple CVEs, and there is no linking data to indicate they are related.
 
-[vim is vulnerable to Heap-based Buffer Overflow](vim is vulnerable to Heap-based Buffer Overflow.md)
+[vim is vulnerable to Heap-based Buffer Overflow](vim%20is%20vulnerable%20to%20Heap-based%20Buffer%20Overflow.md)
 
