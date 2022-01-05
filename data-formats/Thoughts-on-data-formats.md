@@ -4,6 +4,10 @@ This is not a final document nor an official statement on the data format(s) use
 
 The GSD can use other peoples data formats, especially if we clearly label them as such. We can also provide mappings, e.g. OSV:affected:package:name maps to CVE:product:product_name to translate the data and make it easier to consume.
 
+# GSD Identifer data components
+
+What data components MUST/SHOULD/CAN a GSD identifier have, what is the bare minimum to make these useful?
+
 ## a GSD Identifier MUST have:
 
 * Identifier
@@ -41,10 +45,30 @@ And ideally we want some information to make the security identifier directly us
 * OSV https://ossf.github.io/osv-schema/
 * OVAL https://oval.mitre.org/
 
-## String and value handling
+# String and value handling - multiple values
 
 Anything that is a string or a value that can be more than one value needs to be a list so that multiple values can be clearly supported. A perfect example of this is [GSD-2021-1002352.json](https://github.com/cloudsecurityalliance/gsd-database/blob/main/2021/1002xxx/GSD-2021-1002352.json) which is called "log4j" and "log4j2" by Apache and other organizations use the names interchangeably it appears. This means that anything that is not clearly defined as having only a single possible value (e.g. the GSD ID itself, the assigned time) must be assumed to potentially be a list of values.
 
-## Human vs machine data
+# Human-readable vs machine-readable data
 
 The JSON data should contain both the human and machine readable data. Ideally a strong distinction should be made, e.g. machine readable affected product data should be highly structured, but a human readable text description should be allowed (e.g. the current style of CVE text description), and any human readable data MUST allow basic formatting, I think standardizing on Markdown is the most sensible solution. The current mess that is CVE text descriptions (overly short, some unreadable due to "ths is not CVE-FOO" and so on) and the experience of turning the text description in GSD-2021-1002352 into something more readable comes to mind. It should be noted that MITRE doesn't even allow line returns to split text up into paragraphs/etc (if you submit a CVE JSON entry they strip the line returns). 
+
+# Types of fields
+
+## Unique vs multiple occurances
+
+Some fields must be unique across the GSD database, e.g. the GSD identifier for a specific GSD must be unique. But for example relationship data could contain multiple instances of a GSD identiifier across multiple different GSD identifiers
+
+Some fields are expected to have non unique values, e.g. timestamps, lists of affected products, etc.
+
+## Human-readable vs machine-readable
+
+All fields should be assumed to be primarily machine readable (and ideally machine generated) except where specifically noted such as the description, or notes fields. 
+
+## Generated vs manually created
+
+Ideally fields should be generated with tools rather than being manually entered where possible, e.g. timestamps, or extracting data from a vendor advisory.
+
+Many fields SHOULD (MUST?) support manual overrides, e.g. affected product lists, very few fields should not allow a manual override (GSD Identifier even? Timestamps?)
+
+
