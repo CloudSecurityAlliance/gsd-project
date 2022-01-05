@@ -14,12 +14,13 @@ What data components MUST/SHOULD/CAN a GSD identifier have, what is the bare min
 * Meta data (time assigned, who requested it, etc.)
 * Reference URL (optional: type of URL, copy of data, etc.) OR Source (e.g. a namespace and an identifier, "redhat.com:RHSA-2021-1234" OR known exploit OR known exploitation
 
-Essentially we need some path if discoverability. 
+Essentially we need some path of discoverability and some data with a degree of confidence indicated (e.g. confirmed, rumour, etc.). 
 
 ## a GSD Identifier SHOULD have
 
 * Affected / Fixed / Vulnerable / Not Vulnerable products/services (CPE? JSON? Purl?)
 * Vulnerbaility information/type (e.g. CWE)
+* An overall confidence score between 0 and 10 based on sources, confirmation, etc.
 
 And ideally we want some information to make the security identifier directly useful for systems and humans beings that consume the data.
 
