@@ -1,0 +1,2 @@
+https://thinkst.com/ts.html
+https://github.com/advisories?query=type%3Aunreviewed
