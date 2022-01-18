@@ -74,3 +74,55 @@ All data must exist within a namespace, the two primary ones are "GSD" and "OSV"
 * CVRF https://www.icasi.org/cvrf/
 * OSV https://ossf.github.io/osv-schema/
 * OVAL https://oval.mitre.org/
+
+# Top Level Tagging
+
+I think some top level tagging such as "vulnerability" would be useful to allow people to more easily sort/view data, some clusters:
+
+* exposure
+* vulnerability
+* weakness
+    
+* availability
+* confidentiality
+* integrity
+    
+* backdoor
+* deceptive software
+* malware
+    
+* closed source
+* cloud
+* on premises
+* open source
+* service
+    
+* could have been worse
+    
+* exploit
+* exploitation
+* exploit code
+* exposure
+* incident
+* ioc
+    
+* rugpull
+* scam
+* spam
+    
+* state actor
+    
+* configuration
+* hardening
+* enhancement
+* patch
+* removal of unsafe feature
+* workaround
+    
+* project 
+* publisher
+* researcher 
+* vendor
+
+
+
