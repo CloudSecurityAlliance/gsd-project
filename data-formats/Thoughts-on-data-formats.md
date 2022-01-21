@@ -65,15 +65,23 @@ Many fields SHOULD (MUST?) support manual overrides, e.g. affected product lists
 
 All data must exist within a namespace, the two primary ones are "GSD" and "OSV", additional namespaces would typically be represented by a domain name, an email address, a URL, or a GitHub username/id combination (since names can change). Namespaces are available for entities, and entity can be an individual, a group, a company, an organization, an automated tool/AI/ML, etc.
 
-# Other data format examples:
+# Other security data format examples:
 
-* CPE https://nvd.nist.gov/products/cpe
+
 * CSAF2 https://docs.oasis-open.org/csaf/csaf/v2.0/csd01/csaf-v2.0-csd01.html
 * CVE https://github.com/CVEProject/cve-schema/tree/master/schema
-* CWE https://cwe.mitre.org/community/submissions/guidelines.html
 * CVRF https://www.icasi.org/cvrf/
 * OSV https://ossf.github.io/osv-schema/
 * OVAL https://oval.mitre.org/
+
+# Other security data format examples for specific subtypes of data:
+
+* CPE https://nvd.nist.gov/products/cpe (Product ID)
+* CVSS https://www.first.org/cvss/ (Vulnerability Impact)
+* CWE https://cwe.mitre.org/community/submissions/guidelines.html (Vulnerability Type)
+* EPSS https://www.first.org/epss/ (Exploitation Prediction)
+* purl https://github.com/package-url/purl-spec (Product ID)
+
 
 # Top Level Tagging
 
