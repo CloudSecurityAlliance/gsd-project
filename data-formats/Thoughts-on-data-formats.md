@@ -67,7 +67,6 @@ All data must exist within a namespace, the two primary ones are "GSD" and "OSV"
 
 # Other security data format examples:
 
-
 * CSAF2 https://docs.oasis-open.org/csaf/csaf/v2.0/csd01/csaf-v2.0-csd01.html
 * CVE https://github.com/CVEProject/cve-schema/tree/master/schema
 * CVRF https://www.icasi.org/cvrf/
@@ -81,7 +80,7 @@ All data must exist within a namespace, the two primary ones are "GSD" and "OSV"
 * CWE https://cwe.mitre.org/community/submissions/guidelines.html (Vulnerability Type)
 * EPSS https://www.first.org/epss/ (Exploitation Prediction)
 * purl https://github.com/package-url/purl-spec (Product ID)
-
+* NIST Vulnerability Ontology https://github.com/usnistgov/vulntology
 
 # Top Level Tagging
 
