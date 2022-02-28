@@ -5,7 +5,7 @@
 
 ## Data format
 
-[We use OSV by default, and may use other data formats or unspecified formats as well.](https://github.com/cloudsecurityalliance/gsd-project-plans/blob/main/data-formats/Thoughts-on-data-formats.md) We will indicate what format we're using within the GSD, e.g.:
+[We use OSV by default, and may use other data formats or unspecified formats as well.](https://github.com/cloudsecurityalliance/gsd-project/blob/main/data-formats/Thoughts-on-data-formats.md) We will indicate what format we're using within the GSD, e.g.:
 
 **Generalized format:**
 ```json
