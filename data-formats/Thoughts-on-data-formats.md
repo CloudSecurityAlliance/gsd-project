@@ -81,6 +81,7 @@ All data must exist within a namespace, the two primary ones are "GSD" and "OSV"
 * EPSS https://www.first.org/epss/ (Exploitation Prediction)
 * purl https://github.com/package-url/purl-spec (Product ID)
 * NIST Vulnerability Ontology https://github.com/usnistgov/vulntology
+* VEX https://github.com/CycloneDX/bom-examples/tree/master/VEX https://cyclonedx.org/capabilities/vex/
 
 # Top Level Tagging
 
