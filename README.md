@@ -8,6 +8,14 @@ This is the Global Security Database (GSD) Project Plans which contains all the 
 
 For more information please see https://csaurl.org/gsd-quick-links.
 
+## Contributing
+
+See the [Contribution Guide](CONTRIBUTING.md).
+
+## Resources
+
+[NIST The Bugs Framework](https://samate.nist.gov/BF/)
+
 # Table of contents
 
 *** TODO ***
