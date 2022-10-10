@@ -8,7 +8,7 @@ and ask away!
 
 ## Contributing to the database itself
 
-Please see the [GSD Tools Contribution Guide](https://github.com/cloudsecurityalliance/gsd-database/blob/main/CONTRIBUTING.md).
+Please see the [GSD Database Contribution Guide](https://github.com/cloudsecurityalliance/gsd-database/blob/main/CONTRIBUTING.md).
 
 ## Contributing to the tooling and/or interfaces
 
