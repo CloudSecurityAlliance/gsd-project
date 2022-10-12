@@ -4,6 +4,10 @@ This is not a final document nor an official statement on the data format(s) use
 
 The GSD can use other peoples data formats, especially if we clearly label them as such. We can also provide mappings, e.g. OSV:affected:package:name maps to CVE:product:product_name to translate the data and make it easier to consume.
 
+# Compariong data formats
+
+[Google Sheet - Data Formats and versions Compared](https://docs.google.com/spreadsheets/d/14VHXigdynIGB8okW3jyvtNj-LE0fxEsoBNMvswX4Kwg/edit?usp=sharing)
+
 # GSD Identifer data components
 
 What data components MUST/SHOULD/CAN a GSD identifier have, what is the bare minimum to make these useful?
